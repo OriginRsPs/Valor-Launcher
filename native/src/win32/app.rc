@@ -11,9 +11,9 @@ BEGIN
     BEGIN
         BLOCK "040904B0"
         BEGIN
-            VALUE "FileDescription",  "OpenRune"
-            VALUE "OriginalFilename", "OpenRune.exe"
-            VALUE "ProductName",      "OpenRune Launcher"
+            VALUE "FileDescription",  "Valor"
+            VALUE "OriginalFilename", "Valor.exe"
+            VALUE "ProductName",      "Valor Launcher"
         END
     END
 

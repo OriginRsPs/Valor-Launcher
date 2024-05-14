@@ -1,6 +1,6 @@
 {
     "classPath": [
-        "OpenRune.jar"
+        "Valor.jar"
     ],
     "mainClass": "net.runelite.launcher.Launcher",
     "vmArgs": [

@@ -81,15 +81,15 @@ jlink \
   --add-modules jdk.xml.dom \
   --add-modules jdk.zipfs
 
-cp native/build-aarch64/src/Release/OpenRune.exe build/win-aarch64/
-cp target/OpenRune.jar build/win-aarch64/
+cp native/build-aarch64/src/Release/Valor.exe build/win-aarch64/
+cp target/Valor.jar build/win-aarch64/
 cp packr/win-aarch64-config.json build/win-aarch64/config.json
 cp liblauncher/buildaarch64/Release/launcher_aarch64.dll build/win-aarch64/
 
-echo OpenRune.exe aarch64 sha256sum
-sha256sum build/win-aarch64/OpenRune.exe
+echo Valor.exe aarch64 sha256sum
+sha256sum build/win-aarch64/Valor.exe
 
-dumpbin //HEADERS build/win-aarch64/OpenRune.exe
+dumpbin //HEADERS build/win-aarch64/Valor.exe
 
 # We use the filtered iss file
 iscc target/filtered-resources/arch64.iss
