@@ -13,7 +13,7 @@ PrivilegesRequired=lowest
 
 WizardSmallImageFile=${basedir}/app_small.bmp
 WizardImageFile=${basedir}/left.bmp
-SetupIconFile=${basedir}/app.ico
+SetupIconFile=${basedir}/innosetup/app.ico
 UninstallDisplayIcon={app}\BaseScape.exe
 
 Compression=lzma2
