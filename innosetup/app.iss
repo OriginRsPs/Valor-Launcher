@@ -3,7 +3,7 @@ AppName=BaseScape Launcher
 AppPublisher=BaseScape
 UninstallDisplayName=BaseScape
 AppVersion=${project.version}
-AppSupportURL=https://basescape.io/
+AppSupportURL=https://BaseScape.io/
 DefaultDirName={localappdata}\BaseScape
 
 ; ~30 mb for the repo the launcher downloads
@@ -13,7 +13,7 @@ PrivilegesRequired=lowest
 
 WizardSmallImageFile=${basedir}/app_small.bmp
 WizardImageFile=${basedir}/left.bmp
-SetupIconFile=${basedir}/innosetup/app.ico
+SetupIconFile=${basedir}/app.ico
 UninstallDisplayIcon={app}\BaseScape.exe
 
 Compression=lzma2
