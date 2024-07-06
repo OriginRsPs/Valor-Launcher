@@ -3,7 +3,7 @@ AppName=BaseScape Launcher
 AppPublisher=BaseScape
 UninstallDisplayName=BaseScape
 AppVersion=${project.version}
-AppSupportURL=https://https://basescape.io/
+AppSupportURL=https://basescape.io/
 DefaultDirName={localappdata}\BaseScape
 
 ; ~30 mb for the repo the launcher downloads
