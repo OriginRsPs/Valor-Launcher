@@ -1,6 +1,6 @@
 {
   "classPath": [
-    "Valor.jar"
+    "BaseScape.jar"
   ],
   "mainClass": "net.runelite.launcher.Launcher",
   "vmArgs": [

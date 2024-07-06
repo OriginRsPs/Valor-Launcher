@@ -1,10 +1,10 @@
 [Setup]
-AppName=Valor Launcher
-AppPublisher=Valor
-UninstallDisplayName=Valor
+AppName=BaseScape Launcher
+AppPublisher=BaseScape
+UninstallDisplayName=BaseScape
 AppVersion=${project.version}
-AppSupportURL=https://valor.net/
-DefaultDirName={localappdata}\Valor
+AppSupportURL=https://https://basescape.io/
+DefaultDirName={localappdata}\BaseScape
 
 ; ~30 mb for the repo the launcher downloads
 ExtraDiskSpaceRequired=30000000
@@ -14,20 +14,20 @@ PrivilegesRequired=lowest
 WizardSmallImageFile=${basedir}/app_small.bmp
 WizardImageFile=${basedir}/left.bmp
 SetupIconFile=${basedir}/app.ico
-UninstallDisplayIcon={app}\Valor.exe
+UninstallDisplayIcon={app}\BaseScape.exe
 
 Compression=lzma2
 SolidCompression=yes
 
 OutputDir=${basedir}
-OutputBaseFilename=ValorSetup32
+OutputBaseFilename=BaseScapeSetup32
 
 [Tasks]
 Name: DesktopIcon; Description: "Create a &desktop icon";
 
 [Files]
-Source: "${basedir}\build\win-x86\Valor.exe"; DestDir: "{app}"
-Source: "${basedir}\build\win-x86\Valor.jar"; DestDir: "{app}"
+Source: "${basedir}\build\win-x86\BaseScape.exe"; DestDir: "{app}"
+Source: "${basedir}\build\win-x86\BaseScape.jar"; DestDir: "{app}"
 Source: "${basedir}\build\win-x86\launcher_x86.dll"; DestDir: "{app}"
 Source: "${basedir}\build\win-x86\config.json"; DestDir: "{app}"
 Source: "${basedir}\build\win-x86\jre\*"; DestDir: "{app}\jre"; Flags: recursesubdirs
@@ -37,23 +37,23 @@ Source: "${basedir}\app_small.bmp"; DestDir: "{app}"
 
 [Icons]
 ; start menu
-Name: "{userprograms}\Valor\Valor"; Filename: "{app}\Valor.exe"
-Name: "{userprograms}\Valor\Valor (configure)"; Filename: "{app}\Valor.exe"; Parameters: "--configure"
-Name: "{userprograms}\Valor\Valor (safe mode)"; Filename: "{app}\Valor.exe"; Parameters: "--safe-mode"
-Name: "{userdesktop}\Valor"; Filename: "{app}\Valor.exe"; Tasks: DesktopIcon
+Name: "{userprograms}\BaseScape\BaseScape"; Filename: "{app}\BaseScape.exe"
+Name: "{userprograms}\BaseScape\BaseScape (configure)"; Filename: "{app}\BaseScape.exe"; Parameters: "--configure"
+Name: "{userprograms}\BaseScape\BaseScape (safe mode)"; Filename: "{app}\BaseScape.exe"; Parameters: "--safe-mode"
+Name: "{userdesktop}\BaseScape"; Filename: "{app}\BaseScape.exe"; Tasks: DesktopIcon
 
 [Run]
-Filename: "{app}\Valor.exe"; Parameters: "--postinstall"; Flags: nowait
-Filename: "{app}\Valor.exe"; Description: "&Open Valor"; Flags: postinstall skipifsilent nowait
+Filename: "{app}\BaseScape.exe"; Parameters: "--postinstall"; Flags: nowait
+Filename: "{app}\BaseScape.exe"; Description: "&Open BaseScape"; Flags: postinstall skipifsilent nowait
 
 [InstallDelete]
 ; Delete the old jvm so it doesn't try to load old stuff with the new vm and crash
 Type: filesandordirs; Name: "{app}\jre"
 ; previous shortcut
-Type: files; Name: "{userprograms}\Valor.lnk"
+Type: files; Name: "{userprograms}\BaseScape.lnk"
 
 [UninstallDelete]
-Type: filesandordirs; Name: "{%USERPROFILE}\.valor\repository2"
+Type: filesandordirs; Name: "{%USERPROFILE}\.BaseScape\repository2"
 ; includes install_id, settings, etc
 Type: filesandordirs; Name: "{app}"
 

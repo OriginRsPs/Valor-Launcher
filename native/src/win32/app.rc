@@ -11,9 +11,9 @@ BEGIN
     BEGIN
         BLOCK "040904B0"
         BEGIN
-            VALUE "FileDescription",  "Valor"
-            VALUE "OriginalFilename", "Valor.exe"
-            VALUE "ProductName",      "Valor Launcher"
+            VALUE "FileDescription",  "BaseScape"
+            VALUE "OriginalFilename", "BaseScape.exe"
+            VALUE "ProductName",      "BaseScape Launcher"
         END
     END
 
