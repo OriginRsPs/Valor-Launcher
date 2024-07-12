@@ -7,7 +7,7 @@
   <summary>Ftp Setup</summary>
     Coming Soon
 </details>
-is already setup
+
 
 <details>
   <summary>Adding Release Plugin into your Client (Gradle)</summary>
@@ -175,7 +175,7 @@ asking the user and download right away, if you have more then 2 clients it will
 ### Branding
 ## Names
 
-1) Go into launcher.properties And edit 'basescape' and links to your server links and name
+1) Go into launcher.properties And edit 'valor' and links to your server links and name
 
 ```kotlin
 runelite.launcher.version=${project.version}  
@@ -186,7 +186,7 @@ runelite.download.link=https://**valor**.net/download/
 runelite.website=https://**valor**.net/  
 runelite.bootstrap=https://valor.s3.eu-west-2.amazonaws.com/bootstrap.json  
 runelite.bootstrapsig=https://valor.s3.eu-west-2.amazonaws.com/bootstrap.json.sha256  
-runelite.name=**BaseScape**  
+runelite.name=**Valor**  
 runelite.main=net.runelite.client.RuneLite
 ```
 
@@ -196,11 +196,11 @@ This will bring this window up
 
 ![This is an image](https://i.imgur.com/VqiqIeP.png)
 
-Make sure CC is selected and replace 'BaseScape' with 'MyCoolName' MAKE SURE ITS CAPS E same with the server name
+Make sure CC is selected and replace 'Valor' with 'MyCoolName' MAKE SURE ITS CAPS E same with the server name
 
 3) Inside Intellij click the root of the project and press CTRL + ALT + R
 
-Make sure CC is selected and replace 'basescape' with 'myCoolName' MAKE SURE ITS LOWERCASE E same with the server name
+Make sure CC is selected and replace 'valor' with 'myCoolName' MAKE SURE ITS LOWERCASE E same with the server name
 
 ![This is an image](https://i.imgur.com/3uXXxbL.png)
 
