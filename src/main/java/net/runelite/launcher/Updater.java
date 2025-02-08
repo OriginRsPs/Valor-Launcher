@@ -55,7 +55,7 @@ import org.w3c.dom.NodeList;
 @Slf4j
 class Updater
 {
-    private static final String RUNELITE_APP = "/Applications/Valor.app";
+    private static final String RUNELITE_APP = "/Applications/SpawnPVP.app";
 
     static void update(Bootstrap bootstrap, LauncherSettings launcherSettings, String[] args)
     {
@@ -179,7 +179,7 @@ class Updater
             delete(Paths.get(RUNELITE_APP));
 
             log.debug("Copying new install from {}", mountPoint);
-            copy(Paths.get(mountPoint, "Valor.app"), Paths.get(RUNELITE_APP));
+            copy(Paths.get(mountPoint, "SpawnPVP.app"), Paths.get(RUNELITE_APP));
 
             log.debug("Unmounting dmg");
             pb = new ProcessBuilder(
@@ -255,7 +255,7 @@ class Updater
         String installLocation;
 
         try {
-            installLocation = regQueryString("Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Valor Launcher_is1", "InstallLocation");
+            installLocation = regQueryString("Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\SpawnPVP Launcher_is1", "InstallLocation");
         } catch (UnsatisfiedLinkError | RuntimeException ex) {
             log.debug("Skipping update check, error querying install location", ex);
             return;
