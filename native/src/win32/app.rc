@@ -11,9 +11,9 @@ BEGIN
     BEGIN
         BLOCK "040904B0"
         BEGIN
-            VALUE "FileDescription",  "SpawnPVP"
-            VALUE "OriginalFilename", "SpawnPVP.exe"
-            VALUE "ProductName",      "SpawnPVP Launcher"
+            VALUE "FileDescription",  "Wrath"
+            VALUE "OriginalFilename", "Wrath.exe"
+            VALUE "ProductName",      "Wrath Launcher"
         END
     END
 

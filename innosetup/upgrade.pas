@@ -12,10 +12,10 @@ begin
   if CurStep = ssPostInstall then begin
     WriteInstallId();
 
-    rlUpgrade := GetEnv('SpawnPVP_UPGRADE');
+    rlUpgrade := GetEnv('Wrath_UPGRADE');
     if rlUpgrade <> '' then begin
-      exePath := ExpandConstant('{app}\SpawnPVP.exe');
-      Exec(exePath, GetEnv('SpawnPVP_UPGRADE_PARAMS'), '', SW_SHOW, ewNoWait, ResultCode);
+      exePath := ExpandConstant('{app}\Wrath.exe');
+      Exec(exePath, GetEnv('Wrath_UPGRADE_PARAMS'), '', SW_SHOW, ewNoWait, ResultCode);
     end;
   end;
 end;

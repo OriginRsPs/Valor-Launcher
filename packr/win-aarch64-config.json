@@ -1,6 +1,6 @@
 {
   "classPath": [
-    "SpawnPVP.jar"
+    "Wrath.jar"
   ],
   "mainClass": "net.runelite.launcher.Launcher",
   "vmArgs": [

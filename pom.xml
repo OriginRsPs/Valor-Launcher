@@ -30,8 +30,8 @@
 	<groupId>net.runelite</groupId>
 	<artifactId>launcher</artifactId>
 	<version>1.0</version>
-	<name>SpawnPVP Launcher</name>
-	<description>Launcher for SpawnPVP client</description>
+	<name>Wrath Launcher</name>
+	<description>Launcher for Wrath client</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -152,7 +152,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>SpawnPVP</finalName>
+		<finalName>Wrath</finalName>
 
 
 		<plugins>
