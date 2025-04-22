@@ -62,7 +62,7 @@ fi
 
 echo "d2624ce8cc2c64ef76ba986166ad67f07110cdbf85112ace4f91611bc634c96a  runtime-aarch64" | sha256sum -c
 
-ARCH=arm_aarch64 ./appimagetool-x86_64.AppImage \
+ARCH=arm_aarch64 ./appimagetool-x86_64.AppImage --appimage-extract \
   --runtime-file runtime-aarch64 \
   build/linux-aarch64/ \
   Wrath-aarch64.AppImage
