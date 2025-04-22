@@ -55,6 +55,6 @@ fi
 
 echo "df3baf5ca5facbecfc2f3fa6713c29ab9cefa8fd8c1eac5d283b79cab33e4acb  appimagetool-x86_64.AppImage" | sha256sum -c
 
-ARCH=x86_64 ./appimagetool-x86_64.AppImage --appimage-extract \
-  build/linux-x64/ \
-  Wrath.AppImage
+# Build the AppImage
+ARCH=x86_64 ./appimagetool-x86_64.AppImage build/linux-x64/ Wrath.AppImage
+# Ensure the AppImage is executable to all users
